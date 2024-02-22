@@ -126,4 +126,6 @@ Route::resource('photo', PhotoController::class)->except(['create', 'store', 'up
 // Route::get('/greeting', function () {
 //     return view('blog.hello', ['name' => 'Reza']);
 // });
+
 Route::get('/greeting', [WelcomeController::class, 'greeting']);
+
